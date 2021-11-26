@@ -22,7 +22,10 @@ function App() {
 
   return (
     <>
-    {init ? (<AppRouter isLoggedIn ={isLoggedIn} userObj = {userObj} />):("initalizing..."
+    {init ? (
+    <AppRouter isLoggedIn ={isLoggedIn} userObj = {userObj} />
+    ):(
+      "initalizing..."
     )}
      
     </>
