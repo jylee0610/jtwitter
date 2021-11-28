@@ -53,7 +53,7 @@ const AuthForm = () => {
     };
 return(
     <>
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="container">
         <input
         name="email"
         type="text"
@@ -61,6 +61,7 @@ return(
           required
           value={email}
           onChange={onChange} 
+          className="authInput"
           />
 
           <input
