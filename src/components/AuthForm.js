@@ -72,11 +72,13 @@ return(
           value={password}
           onChange={onChange} />
         
-        <input type="submit" value={newAccount ? "Create Account":"Log In "} />
+        <input type="submit" value={newAccount ? "Create Account":"Log In "} 
+        className = "authInput authSubmit"
+        />
     
-        {error}
+        {error && <span className = "authError">{erreor}</span>}
         </form>
-        <span onClick={toggleAccount} >
+        <span onClick={toggleAccount} className="authSwitch" >
             {newAccount ? "sign In" :"Create Account"}
             </span>
 
