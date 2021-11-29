@@ -25,7 +25,7 @@ return(
         <FontAwesomeIcon
             icon={faTwitter}
             color={"#04AAFF"}
-            size="3X"
+            size="4x"
             style={{marginbottom:30}}
         />
         <AuthForm />

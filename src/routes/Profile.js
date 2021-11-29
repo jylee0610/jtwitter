@@ -25,17 +25,20 @@ const onChange = (event) => {
     };
 
     return (
-        <>
-        <form onSubmit={onSubmit}>
+        <div className="container">
+        <form onSubmit={onSubmit} className="profileForm">
             <input onChange={onChange}
             type="text"
              placeholder="Display name"
-             value={newDisplayName} />
+             value={newDisplayName}
+             autoFocus
+             className="FormInput"
+             />
                                                                                         
-            <input type="submit" placeholder="Update Profile" />
+            <input type="submit" placeholder="Update Profile" className="formBtn"style={{marginTop:10,}} />
         </form>
-        <button onClick ={onLogOutClick}>Log Out</button>
-        </>
+        <span className="formBtn cancleBtn logout" onClick ={onLogOutClick}>Log Out</span>
+        </div>
     );
 };
 export default Profile;

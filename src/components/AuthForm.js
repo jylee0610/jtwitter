@@ -70,7 +70,8 @@ return(
          placeholder="Password"
           required
           value={password}
-          onChange={onChange} />
+          onChange={onChange}
+          className="authInput" />
         
         <input type="submit" value={newAccount ? "Create Account":"Log In "} 
         className = "authInput authSubmit"

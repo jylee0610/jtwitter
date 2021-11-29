@@ -21,9 +21,9 @@ const Home=({userObj})=>{
     
   
 return (
-    <>
+    <div className ="container">
       <NweetFactory userObj={userObj} />
-      <div>
+      <div style ={{marginTop:30}}>
         {nweets.map((nweet) => (
           <Nweet
             key={nweet.id}
@@ -32,7 +32,7 @@ return (
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 export default Home;
