@@ -76,7 +76,7 @@ return(
         className = "authInput authSubmit"
         />
     
-        {error && <span className = "authError">{erreor}</span>}
+        {error && <span className = "authError">{error}</span>}
         </form>
         <span onClick={toggleAccount} className="authSwitch" >
             {newAccount ? "sign In" :"Create Account"}
